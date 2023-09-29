@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context=".fragment.TaomQoshishFragment">
+
+    <EditText
+        android:id="@+id/nameTam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bak"
+        android:hint="Taom nomi"
+        android:padding="14dp"
+        android:paddingHorizontal="10dp"
+        android:textColorHint="@color/black" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_marginHorizontal="20sp"
+        android:paddingHorizontal="104dp"
+        android:paddingVertical="40dp"
+        app:cardBackgroundColor="#DED7D7">
+
+        <EditText
+            android:id="@+id/kerakliMa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kerakli mahsulotlar"
+            android:paddingHorizontal="10dp"
+            android:textColorHint="@color/black" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="350sp"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="20sp"
+        android:paddingVertical="40dp"
+        app:cardBackgroundColor="#DED7D7">
+
+        <EditText
+            android:id="@+id/tayyorTar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Taom tayyorlanish tartibi"
+            android:paddingHorizontal="10dp"
+            android:textColorHint="@color/black"
+            android:textSize="20sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/saveTaom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#22E286"
+        android:text="Taom qo’shish"
+        android:textColorHint="#22E286" />
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/boshFragment">
+
+    <fragment
+        android:id="@+id/boshFragment"
+        android:name="com.uz.sqlitefoodapp.fragment.BoshFragment"
+        android:label="fragment_bosh"
+        tools:layout="@layout/fragment_bosh" >
+        <action
+            android:id="@+id/action_boshFragment_to_taomHaqidaFragment"
+            app:destination="@id/taomHaqidaFragment" />
+        <action
+            android:id="@+id/action_boshFragment_to_taomQoshishFragment"
+            app:destination="@id/taomQoshishFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taomHaqidaFragment"
+        android:name="com.uz.sqlitefoodapp.fragment.TaomHaqidaFragment"
+        android:label="fragment_taom_haqida"
+        tools:layout="@layout/fragment_taom_haqida" >
+        <action
+            android:id="@+id/action_taomHaqidaFragment_to_taomlarFragment"
+            app:destination="@id/taomlarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taomQoshishFragment"
+        android:name="com.uz.sqlitefoodapp.fragment.TaomQoshishFragment"
+        android:label="fragment_taom_qoshish"
+        tools:layout="@layout/fragment_taom_qoshish" />
+    <fragment
+        android:id="@+id/taomlarFragment"
+        android:name="com.uz.sqlitefoodapp.fragment.TaomlarFragment"
+        android:label="fragment_taomlar"
+        tools:layout="@layout/fragment_taomlar" />
+</navigation>
